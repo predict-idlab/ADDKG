@@ -18,3 +18,9 @@ This data was constructed from a e-commerce microservice platform. In a microser
 The goal of this track is to predict occuring anomalies within an unseen test set. The data can be found in the Track 1 folder. For each round, both the knowledge graphs, a label.csv file and an example submission can be found.
 ### Round 1
 In this round, training labels for 3 days are provided within this repository. The goal is to make predictions for the last two days within this dataset. Evaluation criterea can be found at the evalai competition platform, which will host this challenge.
+
+### Round 2
+To be announced
+
+## Track 2
+To be announced
