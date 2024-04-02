@@ -1,6 +1,6 @@
-# ISWC Challenge: Anomaly Detection on Dynamic Knowledge Graphs
+# [ISWC 2024](https://iswc2024.semanticweb.org/) Challenge:</br> Anomaly Detection on Dynamic Knowledge Graphs
 
-[![slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/addkgiswcchallenge/shared_invite/zt-2f4pbtfmu-1SyIPzVnRBNeeXFpSgIysA)
+[![slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](https://join.slack.com/t/addkgiswcchallenge/shared_invite/zt-2f4pbtfmu-1SyIPzVnRBNeeXFpSgIysA) [Join our Slack channel for more updates!](https://join.slack.com/t/addkgiswcchallenge/shared_invite/zt-2f4pbtfmu-1SyIPzVnRBNeeXFpSgIysA)
 
 
 
@@ -14,8 +14,11 @@ Within the Data folder in this reposity, you will find DKGs seperated by timesta
 ### Origin of data
 This data was constructed from a e-commerce microservice platform. In a microservice cluster, different services work together to achieve the best possible way to adapt different software components to new unkown behaviour. 
 
-## Track 1
-The goal of this track is to predict occuring anomalies within an unseen test set. The data can be found in the Track 1 folder. For each round, both the knowledge graphs, a label.csv file and an example submission can be found.
+
+
+## <img src="https://eval.ai/dist/images/evalai-logo-single.png" alt="Track 1" width="25"/> [Track 1](https://eval.ai/web/challenges/challenge-page/2267/overview)
+The goal of this track is to predict occuring anomalies within an unseen test set. The data can be found in the Track 1 folder. For each round, both the knowledge graphs, a label.csv file and an example submission can be found.</br>
+Submissions can be made using the [challenge eval.ai platform](https://eval.ai/web/challenges/challenge-page/2267/overview)
 ### Round 1
 In this round, training labels for 3 days are provided within this repository. The goal is to make predictions for the last two days within this dataset. Evaluation criterea can be found at the evalai competition platform, which will host this challenge.
 
