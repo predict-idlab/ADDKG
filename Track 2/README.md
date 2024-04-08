@@ -1,16 +1,17 @@
 ## Track 2
 
-Within each round folder, you will find a detector, monitor and replay folder containing all necessary code to create a streaming knowledge graph environment. 
+Within each round folder, you will find a detector, monitor, and replayer folder containing all necessary code to create a streaming knowledge graph environment.
 
-Within the replayer folder, the replay.py functionality can be adapted to your needs.
-You can:
-* Load different data segments based on regions where anomalies do occur
-* Change the time between knowledge graph events, to speed up local evaluations.
+Inside the replayer folder, the functionality of replay.py can be customized to suit your requirements. You can:
 
-Do take into account that the challenge organizers will us the default replayer functionality to score the different systems.</br>
+* Load different data segments based on regions where anomalies occur.
+* Adjust the time between knowledge graph events to expedite local evaluations.
 
-Two docker compose yaml files are also made available:
-* a full-application file, that can build and run the detector, monitor and replayer + kafka in one 
-* a simpler docker compose file, that only exploits the kafka functionality for local development. Running this docker compose file enables participants to start the replayer, monitor and detector as individual python runs, for debugging purposes outisde the docker environment.
+Please note that the challenge organizers will use the default replayer functionality to score the different systems.
 
-Participants can extend or create a new detector based on the code within the detector folder. Participants are allowed to use other languages than Python to create their detectors. Please contact the challenge organizers through slack if you need additional assitance.
+Two Docker Compose YAML files are also provided:
+
+* A full-application file that can build and run the detector, monitor, replayer, and Kafka altogether.
+* A simpler Docker Compose file that only utilizes the Kafka functionality for local development. Running this Docker Compose file enables participants to initiate the replayer, monitor, and detector as individual Python runs, for debugging purposes outside the Docker environment.
+
+Participants can expand upon or create a new detector using the code within the detector folder. Participants are permitted to use languages other than Python for their detectors. For additional assistance, please contact the challenge organizers through Slack.
