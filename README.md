@@ -22,7 +22,7 @@ Submissions can be made using the [challenge eval.ai platform](https://eval.ai/w
 In this round, training labels for 3 days are provided within this repository. The goal is to make predictions for the last two days within this dataset. Evaluation criterea can be found at the evalai competition platform, which will host this challenge.
 
 ### Round 2
-To be announced
+In this round, a brand new evaluation set of 2.5 days is provided to be evaluated. The goal is to predict where the anomalies can be found within this dataset AND the anomaly type. We've updated the labels of round 1 to train new models or to update already existing models. More information can be found at the [eval.ai round 2 description](https://eval.ai/web/challenges/challenge-page/2267/phases)
 
 ## Track 2
 The objective of Track 2 is to identify anomalies promptly as they emerge. In the realm of dynamic knowledge graphs, new graphs are continuously generated over time. For each graph, a detector is tasked with assessing whether it exhibits anomalous behavior. Your challenge in this track is to create detectors capable of analyzing incoming graphs and detecting anomalies at each timestamp. </br>
@@ -46,7 +46,8 @@ We would like to ask the participants to host their detector containers in a pub
 Submission can be made using [this form](https://forms.gle/sQDAZAzNdRZBt4SXA)
 
 ### Round 2
-To be announced
+Additional data is provided to simulate the streaming behaviour.
+Submission can be made using [this form](https://forms.gle/sQDAZAzNdRZBt4SXA)
 
 
 

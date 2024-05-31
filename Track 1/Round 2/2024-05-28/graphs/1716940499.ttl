@@ -1,0 +1,1382 @@
+@prefix ns1: <https://github.com/predict/deucalion#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:cluster.local a ns1:Cluster ;
+    ns1:HasNode ns1:node1.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be,
+        ns1:node2.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be,
+        ns1:node3.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be,
+        ns1:node4.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be .
+
+ns1:frontend-external.onlineboutique.svc.cluster.local a ns1:Service .
+
+ns1:redis-cart.onlineboutique.svc.cluster.local a ns1:Service .
+
+ns1:169.254.169.254 a ns1:Service .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=cartservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:cartservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 3.809524e-02 ;
+    ns1:HasRequestCount_deviation 8.36163e-03 ;
+    ns1:HasRequestCount_max 5e-02 ;
+    ns1:HasRequestCount_min 2.5e-02 ;
+    ns1:HasRequestCount_percentile_50.0 4.166667e-02 ;
+    ns1:HasRequestCount_percentile_90.0 5e-02 ;
+    ns1:HasRequestCount_percentile_95.0 5e-02 ;
+    ns1:HasRequestCount_variance 6.991686e-05 ;
+    ns1:HasRequestDuration_average 3.675397e+00 ;
+    ns1:HasRequestDuration_deviation 4.379371e-01 ;
+    ns1:HasRequestDuration_max 4.383333e+00 ;
+    ns1:HasRequestDuration_min 3.05e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 3.8e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 4.383333e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 4.383333e+00 ;
+    ns1:HasRequestDuration_variance 1.917889e-01 ;
+    ns1:HasRequestSize_average 6.95e+01 ;
+    ns1:HasRequestSize_deviation 1.07424e-14 ;
+    ns1:HasRequestSize_max 6.95e+01 ;
+    ns1:HasRequestSize_min 6.95e+01 ;
+    ns1:HasRequestSize_percentile_50.0 6.95e+01 ;
+    ns1:HasRequestSize_percentile_90.0 6.95e+01 ;
+    ns1:HasRequestSize_percentile_95.0 6.95e+01 ;
+    ns1:HasRequestSize_variance 1.153991e-28 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=currencyservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:currencyservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 4.246032e-02 ;
+    ns1:HasRequestCount_deviation 9.415723e-03 ;
+    ns1:HasRequestCount_max 5.416667e-02 ;
+    ns1:HasRequestCount_min 2.5e-02 ;
+    ns1:HasRequestCount_percentile_50.0 4.583333e-02 ;
+    ns1:HasRequestCount_percentile_90.0 5.416667e-02 ;
+    ns1:HasRequestCount_percentile_95.0 5.416667e-02 ;
+    ns1:HasRequestCount_variance 8.865583e-05 ;
+    ns1:HasRequestDuration_average 1.644517e+00 ;
+    ns1:HasRequestDuration_deviation 1.377201e-01 ;
+    ns1:HasRequestDuration_max 1.85e+00 ;
+    ns1:HasRequestDuration_min 1.504545e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 1.595455e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 1.85e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 1.85e+00 ;
+    ns1:HasRequestDuration_variance 1.896683e-02 ;
+    ns1:HasRequestSize_average 5.15e+01 ;
+    ns1:HasRequestSize_deviation 3.467094e-15 ;
+    ns1:HasRequestSize_max 5.15e+01 ;
+    ns1:HasRequestSize_min 5.15e+01 ;
+    ns1:HasRequestSize_percentile_50.0 5.15e+01 ;
+    ns1:HasRequestSize_percentile_90.0 5.15e+01 ;
+    ns1:HasRequestSize_percentile_95.0 5.15e+01 ;
+    ns1:HasRequestSize_variance 1.202074e-29 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=emailservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:emailservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 1.904762e-02 ;
+    ns1:HasRequestCount_deviation 4.180815e-03 ;
+    ns1:HasRequestCount_max 2.5e-02 ;
+    ns1:HasRequestCount_min 1.25e-02 ;
+    ns1:HasRequestCount_percentile_50.0 2.083333e-02 ;
+    ns1:HasRequestCount_percentile_90.0 2.5e-02 ;
+    ns1:HasRequestCount_percentile_95.0 2.5e-02 ;
+    ns1:HasRequestCount_variance 1.747921e-05 ;
+    ns1:HasRequestDuration_average 2.401587e+00 ;
+    ns1:HasRequestDuration_deviation 6.212821e-02 ;
+    ns1:HasRequestDuration_max 2.45e+00 ;
+    ns1:HasRequestDuration_min 2.3e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.45e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.45e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.45e+00 ;
+    ns1:HasRequestDuration_variance 3.859914e-03 ;
+    ns1:HasRequestSize_average 2.343333e+02 ;
+    ns1:HasRequestSize_deviation 6.685687e+00 ;
+    ns1:HasRequestSize_max 2.45e+02 ;
+    ns1:HasRequestSize_min 2.25e+02 ;
+    ns1:HasRequestSize_percentile_50.0 2.33e+02 ;
+    ns1:HasRequestSize_percentile_90.0 2.45e+02 ;
+    ns1:HasRequestSize_percentile_95.0 2.45e+02 ;
+    ns1:HasRequestSize_variance 4.469841e+01 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=paymentservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:paymentservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 1.904762e-02 ;
+    ns1:HasRequestCount_deviation 4.180815e-03 ;
+    ns1:HasRequestCount_max 2.5e-02 ;
+    ns1:HasRequestCount_min 1.25e-02 ;
+    ns1:HasRequestCount_percentile_50.0 2.083333e-02 ;
+    ns1:HasRequestCount_percentile_90.0 2.5e-02 ;
+    ns1:HasRequestCount_percentile_95.0 2.5e-02 ;
+    ns1:HasRequestCount_variance 1.747921e-05 ;
+    ns1:HasRequestDuration_average 2.097619e+00 ;
+    ns1:HasRequestDuration_deviation 9.816918e-02 ;
+    ns1:HasRequestDuration_max 2.3e+00 ;
+    ns1:HasRequestDuration_min 2.05e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.05e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.3e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.3e+00 ;
+    ns1:HasRequestDuration_variance 9.637188e-03 ;
+    ns1:HasRequestSize_average 7.775635e+01 ;
+    ns1:HasRequestSize_deviation 2.705313e-01 ;
+    ns1:HasRequestSize_max 7.825e+01 ;
+    ns1:HasRequestSize_min 7.75e+01 ;
+    ns1:HasRequestSize_percentile_50.0 7.77e+01 ;
+    ns1:HasRequestSize_percentile_90.0 7.825e+01 ;
+    ns1:HasRequestSize_percentile_95.0 7.825e+01 ;
+    ns1:HasRequestSize_variance 7.31872e-02 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=productcatalogservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:productcatalogservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 2.34127e-02 ;
+    ns1:HasRequestCount_deviation 5.527138e-03 ;
+    ns1:HasRequestCount_max 2.916667e-02 ;
+    ns1:HasRequestCount_min 1.25e-02 ;
+    ns1:HasRequestCount_percentile_50.0 2.5e-02 ;
+    ns1:HasRequestCount_percentile_90.0 2.916667e-02 ;
+    ns1:HasRequestCount_percentile_95.0 2.916667e-02 ;
+    ns1:HasRequestCount_variance 3.054926e-05 ;
+    ns1:HasRequestDuration_average 2.52619e+00 ;
+    ns1:HasRequestDuration_deviation 6.672333e-01 ;
+    ns1:HasRequestDuration_max 3.716667e+00 ;
+    ns1:HasRequestDuration_min 1.883333e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.55e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 3.716667e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 3.716667e+00 ;
+    ns1:HasRequestDuration_variance 4.452003e-01 ;
+    ns1:HasRequestSize_average 4.35e+01 ;
+    ns1:HasRequestSize_deviation 0e+00 ;
+    ns1:HasRequestSize_max 4.35e+01 ;
+    ns1:HasRequestSize_min 4.35e+01 ;
+    ns1:HasRequestSize_percentile_50.0 4.35e+01 ;
+    ns1:HasRequestSize_percentile_90.0 4.35e+01 ;
+    ns1:HasRequestSize_percentile_95.0 4.35e+01 ;
+    ns1:HasRequestSize_variance 0e+00 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=shippingservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:shippingservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 3.809524e-02 ;
+    ns1:HasRequestCount_deviation 8.36163e-03 ;
+    ns1:HasRequestCount_max 5e-02 ;
+    ns1:HasRequestCount_min 2.5e-02 ;
+    ns1:HasRequestCount_percentile_50.0 4.166667e-02 ;
+    ns1:HasRequestCount_percentile_90.0 5e-02 ;
+    ns1:HasRequestCount_percentile_95.0 5e-02 ;
+    ns1:HasRequestCount_variance 6.991686e-05 ;
+    ns1:HasRequestDuration_average 2.209921e+00 ;
+    ns1:HasRequestDuration_deviation 5.024386e-01 ;
+    ns1:HasRequestDuration_max 2.883333e+00 ;
+    ns1:HasRequestDuration_min 1.65e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.45e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.883333e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.883333e+00 ;
+    ns1:HasRequestDuration_variance 2.524446e-01 ;
+    ns1:HasRequestSize_average 1.196667e+02 ;
+    ns1:HasRequestSize_deviation 3.342844e+00 ;
+    ns1:HasRequestSize_max 1.25e+02 ;
+    ns1:HasRequestSize_min 1.15e+02 ;
+    ns1:HasRequestSize_percentile_50.0 1.19e+02 ;
+    ns1:HasRequestSize_percentile_90.0 1.25e+02 ;
+    ns1:HasRequestSize_percentile_95.0 1.25e+02 ;
+    ns1:HasRequestSize_variance 1.11746e+01 ;
+    ns1:HasSource ns1:checkoutservice-6bf469c9db-znnwt .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=169.254.169.254> a ns1:Connection ;
+    ns1:HasDestination ns1:169.254.169.254 ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0e+00 ;
+    ns1:HasRequestCount5XX_deviation 0e+00 ;
+    ns1:HasRequestCount5XX_max 0e+00 ;
+    ns1:HasRequestCount5XX_min 0e+00 ;
+    ns1:HasRequestCount5XX_percentile_50.0 0e+00 ;
+    ns1:HasRequestCount5XX_percentile_90.0 0e+00 ;
+    ns1:HasRequestCount5XX_percentile_95.0 0e+00 ;
+    ns1:HasRequestCount5XX_variance 0e+00 ;
+    ns1:HasRequestCount_average 0e+00 ;
+    ns1:HasRequestCount_deviation 0e+00 ;
+    ns1:HasRequestCount_max 0e+00 ;
+    ns1:HasRequestCount_min 0e+00 ;
+    ns1:HasRequestCount_percentile_50.0 0e+00 ;
+    ns1:HasRequestCount_percentile_90.0 0e+00 ;
+    ns1:HasRequestCount_percentile_95.0 0e+00 ;
+    ns1:HasRequestCount_variance 0e+00 ;
+    ns1:HasRequestDuration_average "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_deviation "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_max "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_min "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_percentile_50.0 "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_percentile_90.0 "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_percentile_95.0 "NaN"^^xsd:double ;
+    ns1:HasRequestDuration_variance "NaN"^^xsd:double ;
+    ns1:HasRequestSize_average "NaN"^^xsd:double ;
+    ns1:HasRequestSize_deviation "NaN"^^xsd:double ;
+    ns1:HasRequestSize_max "NaN"^^xsd:double ;
+    ns1:HasRequestSize_min "NaN"^^xsd:double ;
+    ns1:HasRequestSize_percentile_50.0 "NaN"^^xsd:double ;
+    ns1:HasRequestSize_percentile_90.0 "NaN"^^xsd:double ;
+    ns1:HasRequestSize_percentile_95.0 "NaN"^^xsd:double ;
+    ns1:HasRequestSize_variance "NaN"^^xsd:double ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=adservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:adservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 2.512897e+00 ;
+    ns1:HasRequestCount_deviation 3.636748e-02 ;
+    ns1:HasRequestCount_max 2.570833e+00 ;
+    ns1:HasRequestCount_min 2.475e+00 ;
+    ns1:HasRequestCount_percentile_50.0 2.495833e+00 ;
+    ns1:HasRequestCount_percentile_90.0 2.570833e+00 ;
+    ns1:HasRequestCount_percentile_95.0 2.570833e+00 ;
+    ns1:HasRequestCount_variance 1.322594e-03 ;
+    ns1:HasRequestDuration_average 2.708635e+00 ;
+    ns1:HasRequestDuration_deviation 1.960285e-02 ;
+    ns1:HasRequestDuration_max 2.735524e+00 ;
+    ns1:HasRequestDuration_min 2.67614e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.708473e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.735524e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.735524e+00 ;
+    ns1:HasRequestDuration_variance 3.842716e-04 ;
+    ns1:HasRequestSize_average 4.351547e+01 ;
+    ns1:HasRequestSize_deviation 1.090798e-01 ;
+    ns1:HasRequestSize_max 4.37042e+01 ;
+    ns1:HasRequestSize_min 4.338138e+01 ;
+    ns1:HasRequestSize_percentile_50.0 4.348371e+01 ;
+    ns1:HasRequestSize_percentile_90.0 4.37042e+01 ;
+    ns1:HasRequestSize_percentile_95.0 4.37042e+01 ;
+    ns1:HasRequestSize_variance 1.18984e-02 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=cartservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:cartservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 2.708929e+00 ;
+    ns1:HasRequestCount_deviation 3.4558e-02 ;
+    ns1:HasRequestCount_max 2.770833e+00 ;
+    ns1:HasRequestCount_min 2.675e+00 ;
+    ns1:HasRequestCount_percentile_50.0 2.683333e+00 ;
+    ns1:HasRequestCount_percentile_90.0 2.758333e+00 ;
+    ns1:HasRequestCount_percentile_95.0 2.758333e+00 ;
+    ns1:HasRequestCount_variance 1.194255e-03 ;
+    ns1:HasRequestDuration_average 3.690972e+00 ;
+    ns1:HasRequestDuration_deviation 1.321311e-02 ;
+    ns1:HasRequestDuration_max 3.712037e+00 ;
+    ns1:HasRequestDuration_min 3.673639e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 3.692424e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 3.712037e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 3.712037e+00 ;
+    ns1:HasRequestDuration_variance 1.745862e-04 ;
+    ns1:HasRequestSize_average 6.986623e+01 ;
+    ns1:HasRequestSize_deviation 4.042732e-02 ;
+    ns1:HasRequestSize_max 6.991902e+01 ;
+    ns1:HasRequestSize_min 6.97963e+01 ;
+    ns1:HasRequestSize_percentile_50.0 6.987267e+01 ;
+    ns1:HasRequestSize_percentile_90.0 6.991275e+01 ;
+    ns1:HasRequestSize_percentile_95.0 6.991275e+01 ;
+    ns1:HasRequestSize_variance 1.634368e-03 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=checkoutservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:checkoutservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 1.825397e-02 ;
+    ns1:HasRequestCount_deviation 3.272306e-03 ;
+    ns1:HasRequestCount_max 2.083333e-02 ;
+    ns1:HasRequestCount_min 1.25e-02 ;
+    ns1:HasRequestCount_percentile_50.0 2.083333e-02 ;
+    ns1:HasRequestCount_percentile_90.0 2.083333e-02 ;
+    ns1:HasRequestCount_percentile_95.0 2.083333e-02 ;
+    ns1:HasRequestCount_variance 1.070799e-05 ;
+    ns1:HasRequestDuration_average 3.528651e+01 ;
+    ns1:HasRequestDuration_deviation 2.910734e+00 ;
+    ns1:HasRequestDuration_max 3.875e+01 ;
+    ns1:HasRequestDuration_min 3.19e+01 ;
+    ns1:HasRequestDuration_percentile_50.0 3.61e+01 ;
+    ns1:HasRequestDuration_percentile_90.0 3.875e+01 ;
+    ns1:HasRequestDuration_percentile_95.0 3.875e+01 ;
+    ns1:HasRequestDuration_variance 8.472371e+00 ;
+    ns1:HasRequestSize_average 1.95e+02 ;
+    ns1:HasRequestSize_deviation 0e+00 ;
+    ns1:HasRequestSize_max 1.95e+02 ;
+    ns1:HasRequestSize_min 1.95e+02 ;
+    ns1:HasRequestSize_percentile_50.0 1.95e+02 ;
+    ns1:HasRequestSize_percentile_90.0 1.95e+02 ;
+    ns1:HasRequestSize_percentile_95.0 1.95e+02 ;
+    ns1:HasRequestSize_variance 0e+00 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=currencyservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:currencyservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 2.405397e+01 ;
+    ns1:HasRequestCount_deviation 2.537564e-01 ;
+    ns1:HasRequestCount_max 2.441667e+01 ;
+    ns1:HasRequestCount_min 2.376667e+01 ;
+    ns1:HasRequestCount_percentile_50.0 2.401667e+01 ;
+    ns1:HasRequestCount_percentile_90.0 2.43875e+01 ;
+    ns1:HasRequestCount_percentile_95.0 2.43875e+01 ;
+    ns1:HasRequestCount_variance 6.439232e-02 ;
+    ns1:HasRequestDuration_average 3.074714e+00 ;
+    ns1:HasRequestDuration_deviation 6.852347e-02 ;
+    ns1:HasRequestDuration_max 3.174016e+00 ;
+    ns1:HasRequestDuration_min 2.966194e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 3.077622e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 3.174016e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 3.174016e+00 ;
+    ns1:HasRequestDuration_variance 4.695466e-03 ;
+    ns1:HasRequestSize_average 4.927543e+01 ;
+    ns1:HasRequestSize_deviation 1.278057e-02 ;
+    ns1:HasRequestSize_max 4.929693e+01 ;
+    ns1:HasRequestSize_min 4.926199e+01 ;
+    ns1:HasRequestSize_percentile_50.0 4.927562e+01 ;
+    ns1:HasRequestSize_percentile_90.0 4.929693e+01 ;
+    ns1:HasRequestSize_percentile_95.0 4.929693e+01 ;
+    ns1:HasRequestSize_variance 1.633431e-04 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=productcatalogservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:productcatalogservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 4.437698e+00 ;
+    ns1:HasRequestCount_deviation 9.016149e-02 ;
+    ns1:HasRequestCount_max 4.608333e+00 ;
+    ns1:HasRequestCount_min 4.329167e+00 ;
+    ns1:HasRequestCount_percentile_50.0 4.404167e+00 ;
+    ns1:HasRequestCount_percentile_90.0 4.566667e+00 ;
+    ns1:HasRequestCount_percentile_95.0 4.566667e+00 ;
+    ns1:HasRequestCount_variance 8.129094e-03 ;
+    ns1:HasRequestDuration_average 2.248197e+00 ;
+    ns1:HasRequestDuration_deviation 3.453461e-02 ;
+    ns1:HasRequestDuration_max 2.30024e+00 ;
+    ns1:HasRequestDuration_min 2.202036e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.252652e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.30024e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.30024e+00 ;
+    ns1:HasRequestDuration_variance 1.19264e-03 ;
+    ns1:HasRequestSize_average 3.725688e+01 ;
+    ns1:HasRequestSize_deviation 1.25576e-01 ;
+    ns1:HasRequestSize_max 3.740769e+01 ;
+    ns1:HasRequestSize_min 3.703404e+01 ;
+    ns1:HasRequestSize_percentile_50.0 3.725e+01 ;
+    ns1:HasRequestSize_percentile_90.0 3.740769e+01 ;
+    ns1:HasRequestSize_percentile_95.0 3.740769e+01 ;
+    ns1:HasRequestSize_variance 1.576934e-02 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=recommendationservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:recommendationservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 3.426587e-01 ;
+    ns1:HasRequestCount_deviation 1.149424e-02 ;
+    ns1:HasRequestCount_max 3.625e-01 ;
+    ns1:HasRequestCount_min 3.25e-01 ;
+    ns1:HasRequestCount_percentile_50.0 3.416667e-01 ;
+    ns1:HasRequestCount_percentile_90.0 3.583333e-01 ;
+    ns1:HasRequestCount_percentile_95.0 3.583333e-01 ;
+    ns1:HasRequestCount_variance 1.321177e-04 ;
+    ns1:HasRequestDuration_average 5.840265e+00 ;
+    ns1:HasRequestDuration_deviation 6.91594e-02 ;
+    ns1:HasRequestDuration_max 5.953205e+00 ;
+    ns1:HasRequestDuration_min 5.709091e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 5.818293e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 5.953205e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 5.953205e+00 ;
+    ns1:HasRequestDuration_variance 4.783023e-03 ;
+    ns1:HasRequestSize_average 8.143858e+01 ;
+    ns1:HasRequestSize_deviation 2.21646e-01 ;
+    ns1:HasRequestSize_max 8.190909e+01 ;
+    ns1:HasRequestSize_min 8.106098e+01 ;
+    ns1:HasRequestSize_percentile_50.0 8.15e+01 ;
+    ns1:HasRequestSize_percentile_90.0 8.165385e+01 ;
+    ns1:HasRequestSize_percentile_95.0 8.165385e+01 ;
+    ns1:HasRequestSize_variance 4.912695e-02 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=shippingservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:shippingservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 9.821429e-02 ;
+    ns1:HasRequestCount_deviation 9.144221e-03 ;
+    ns1:HasRequestCount_max 1.125e-01 ;
+    ns1:HasRequestCount_min 8.333333e-02 ;
+    ns1:HasRequestCount_percentile_50.0 1e-01 ;
+    ns1:HasRequestCount_percentile_90.0 1.125e-01 ;
+    ns1:HasRequestCount_percentile_95.0 1.125e-01 ;
+    ns1:HasRequestCount_variance 8.361678e-05 ;
+    ns1:HasRequestDuration_average 1.983005e+00 ;
+    ns1:HasRequestDuration_deviation 3.8213e-02 ;
+    ns1:HasRequestDuration_max 2.05e+00 ;
+    ns1:HasRequestDuration_min 1.925e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 1.97e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.05e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.05e+00 ;
+    ns1:HasRequestDuration_variance 1.460234e-03 ;
+    ns1:HasRequestSize_average 5.018051e+01 ;
+    ns1:HasRequestSize_deviation 1.006662e+00 ;
+    ns1:HasRequestSize_max 5.216667e+01 ;
+    ns1:HasRequestSize_min 4.883333e+01 ;
+    ns1:HasRequestSize_percentile_50.0 4.978571e+01 ;
+    ns1:HasRequestSize_percentile_90.0 5.15e+01 ;
+    ns1:HasRequestSize_percentile_95.0 5.15e+01 ;
+    ns1:HasRequestSize_variance 1.013368e+00 ;
+    ns1:HasSource ns1:frontend-5b47ffb486-5ftdb .
+
+<https://github.com/predict/deucalion#Connection?source=recommendationservice-cc747488-cml54&destination=productcatalogservice.onlineboutique.svc.cluster.local> a ns1:Connection ;
+    ns1:HasDestination ns1:productcatalogservice.onlineboutique.svc.cluster.local ;
+    ns1:HasRequestCount4XX_average 0 ;
+    ns1:HasRequestCount4XX_deviation 0 ;
+    ns1:HasRequestCount4XX_max 0 ;
+    ns1:HasRequestCount4XX_min 0 ;
+    ns1:HasRequestCount4XX_percentile_50 0 ;
+    ns1:HasRequestCount4XX_percentile_90 0 ;
+    ns1:HasRequestCount4XX_percentile_95 0 ;
+    ns1:HasRequestCount4XX_variance 0 ;
+    ns1:HasRequestCount5XX_average 0 ;
+    ns1:HasRequestCount5XX_deviation 0 ;
+    ns1:HasRequestCount5XX_max 0 ;
+    ns1:HasRequestCount5XX_min 0 ;
+    ns1:HasRequestCount5XX_percentile_50 0 ;
+    ns1:HasRequestCount5XX_percentile_90 0 ;
+    ns1:HasRequestCount5XX_percentile_95 0 ;
+    ns1:HasRequestCount5XX_variance 0 ;
+    ns1:HasRequestCount_average 3.458333e-01 ;
+    ns1:HasRequestCount_deviation 2.065399e-02 ;
+    ns1:HasRequestCount_max 3.791667e-01 ;
+    ns1:HasRequestCount_min 3.166667e-01 ;
+    ns1:HasRequestCount_percentile_50.0 3.541667e-01 ;
+    ns1:HasRequestCount_percentile_90.0 3.791667e-01 ;
+    ns1:HasRequestCount_percentile_95.0 3.791667e-01 ;
+    ns1:HasRequestCount_variance 4.265873e-04 ;
+    ns1:HasRequestDuration_average 2.04618e+00 ;
+    ns1:HasRequestDuration_deviation 5.31993e-02 ;
+    ns1:HasRequestDuration_max 2.165385e+00 ;
+    ns1:HasRequestDuration_min 1.984783e+00 ;
+    ns1:HasRequestDuration_percentile_50.0 2.038095e+00 ;
+    ns1:HasRequestDuration_percentile_90.0 2.090541e+00 ;
+    ns1:HasRequestDuration_percentile_95.0 2.165385e+00 ;
+    ns1:HasRequestDuration_variance 2.830166e-03 ;
+    ns1:HasRequestSize_average 4.45e+01 ;
+    ns1:HasRequestSize_deviation 5.142531e-15 ;
+    ns1:HasRequestSize_max 4.45e+01 ;
+    ns1:HasRequestSize_min 4.45e+01 ;
+    ns1:HasRequestSize_percentile_50.0 4.45e+01 ;
+    ns1:HasRequestSize_percentile_90.0 4.45e+01 ;
+    ns1:HasRequestSize_percentile_95.0 4.45e+01 ;
+    ns1:HasRequestSize_variance 2.644562e-29 ;
+    ns1:HasSource ns1:recommendationservice-cc747488-cml54 .
+
+ns1:adservice-6d47d8bb4d a ns1:ReplicaSet ;
+    ns1:Controls ns1:adservice-6d47d8bb4d-55gzb .
+
+ns1:adservice-6d47d8bb4d-55gzb.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 6.521898e-03 ;
+    ns1:HasCPU_deviation 1.143102e-04 ;
+    ns1:HasCPU_max 6.806105e-03 ;
+    ns1:HasCPU_min 6.401891e-03 ;
+    ns1:HasCPU_percentile_50.0 6.505339e-03 ;
+    ns1:HasCPU_percentile_90.0 6.682173e-03 ;
+    ns1:HasCPU_percentile_95.0 6.682173e-03 ;
+    ns1:HasCPU_variance 1.306682e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.311296e+05 ;
+    ns1:HasMemory_deviation 1.359791e+05 ;
+    ns1:HasMemory_max 4.015396e+05 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.685841e+05 ;
+    ns1:HasMemory_percentile_90.0 2.775867e+05 ;
+    ns1:HasMemory_percentile_95.0 4.015396e+05 ;
+    ns1:HasMemory_variance 1.849032e+10 .
+
+ns1:adservice-6d47d8bb4d-55gzb.server a ns1:Container ;
+    ns1:HasCPU_average 2.182158e-03 ;
+    ns1:HasCPU_deviation 5.873882e-05 ;
+    ns1:HasCPU_max 2.274293e-03 ;
+    ns1:HasCPU_min 2.027274e-03 ;
+    ns1:HasCPU_percentile_50.0 2.19563e-03 ;
+    ns1:HasCPU_percentile_90.0 2.262651e-03 ;
+    ns1:HasCPU_percentile_95.0 2.274293e-03 ;
+    ns1:HasCPU_variance 3.450249e-09 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/adservice:v0.9.0> ;
+    ns1:HasMemory_average 0e+00 ;
+    ns1:HasMemory_deviation 0e+00 ;
+    ns1:HasMemory_max 0e+00 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 0e+00 ;
+    ns1:HasMemory_percentile_95.0 0e+00 ;
+    ns1:HasMemory_variance 0e+00 .
+
+ns1:cartservice-58f875656c a ns1:ReplicaSet ;
+    ns1:Controls ns1:cartservice-58f875656c-jwx5k .
+
+ns1:cartservice-58f875656c-jwx5k.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 7.267903e-03 ;
+    ns1:HasCPU_deviation 2.544005e-04 ;
+    ns1:HasCPU_max 7.428713e-03 ;
+    ns1:HasCPU_min 6.485313e-03 ;
+    ns1:HasCPU_percentile_50.0 7.358844e-03 ;
+    ns1:HasCPU_percentile_90.0 7.379247e-03 ;
+    ns1:HasCPU_percentile_95.0 7.379247e-03 ;
+    ns1:HasCPU_variance 6.47196e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 0e+00 ;
+    ns1:HasMemory_deviation 0e+00 ;
+    ns1:HasMemory_max 0e+00 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 0e+00 ;
+    ns1:HasMemory_percentile_95.0 0e+00 ;
+    ns1:HasMemory_variance 0e+00 .
+
+ns1:cartservice-58f875656c-jwx5k.server a ns1:Container ;
+    ns1:HasCPU_average 4.951023e-03 ;
+    ns1:HasCPU_deviation 1.666874e-04 ;
+    ns1:HasCPU_max 5.12379e-03 ;
+    ns1:HasCPU_min 4.369303e-03 ;
+    ns1:HasCPU_percentile_50.0 4.982049e-03 ;
+    ns1:HasCPU_percentile_90.0 5.08961e-03 ;
+    ns1:HasCPU_percentile_95.0 5.12379e-03 ;
+    ns1:HasCPU_variance 2.778469e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/cartservice:v0.9.0> ;
+    ns1:HasMemory_average 3.534589e+05 ;
+    ns1:HasMemory_deviation 9.281148e+04 ;
+    ns1:HasMemory_max 5.183943e+05 ;
+    ns1:HasMemory_min 1.925112e+05 ;
+    ns1:HasMemory_percentile_50.0 3.941054e+05 ;
+    ns1:HasMemory_percentile_90.0 4.291592e+05 ;
+    ns1:HasMemory_percentile_95.0 4.291592e+05 ;
+    ns1:HasMemory_variance 8.613971e+09 .
+
+ns1:checkoutservice-6bf469c9db a ns1:ReplicaSet ;
+    ns1:Controls ns1:checkoutservice-6bf469c9db-znnwt .
+
+ns1:checkoutservice-6bf469c9db-znnwt.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 5.106496e-03 ;
+    ns1:HasCPU_deviation 1.428626e-04 ;
+    ns1:HasCPU_max 5.163069e-03 ;
+    ns1:HasCPU_min 4.481752e-03 ;
+    ns1:HasCPU_percentile_50.0 5.155621e-03 ;
+    ns1:HasCPU_percentile_90.0 5.163069e-03 ;
+    ns1:HasCPU_percentile_95.0 5.163069e-03 ;
+    ns1:HasCPU_variance 2.040974e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.296048e+01 ;
+    ns1:HasMemory_deviation 7.248128e+00 ;
+    ns1:HasMemory_max 1.735071e+01 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.681852e+01 ;
+    ns1:HasMemory_percentile_90.0 1.735071e+01 ;
+    ns1:HasMemory_percentile_95.0 1.735071e+01 ;
+    ns1:HasMemory_variance 5.253536e+01 .
+
+ns1:checkoutservice-6bf469c9db-znnwt.server a ns1:Container ;
+    ns1:HasCPU_average 2.214928e-04 ;
+    ns1:HasCPU_deviation 2.226602e-05 ;
+    ns1:HasCPU_max 2.66658e-04 ;
+    ns1:HasCPU_min 1.966639e-04 ;
+    ns1:HasCPU_percentile_50.0 2.120673e-04 ;
+    ns1:HasCPU_percentile_90.0 2.66658e-04 ;
+    ns1:HasCPU_percentile_95.0 2.66658e-04 ;
+    ns1:HasCPU_variance 4.957756e-10 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/checkoutservice:v0.9.0> ;
+    ns1:HasMemory_average 1.796058e+04 ;
+    ns1:HasMemory_deviation 2.210824e+04 ;
+    ns1:HasMemory_max 4.645456e+04 ;
+    ns1:HasMemory_min 2.668773e+02 ;
+    ns1:HasMemory_percentile_50.0 8.680112e+02 ;
+    ns1:HasMemory_percentile_90.0 4.645456e+04 ;
+    ns1:HasMemory_percentile_95.0 4.645456e+04 ;
+    ns1:HasMemory_variance 4.887744e+08 .
+
+ns1:currencyservice-77d6b75564 a ns1:ReplicaSet ;
+    ns1:Controls ns1:currencyservice-77d6b75564-8kwwr .
+
+ns1:currencyservice-77d6b75564-8kwwr.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 1.859456e-02 ;
+    ns1:HasCPU_deviation 6.271871e-04 ;
+    ns1:HasCPU_max 1.903208e-02 ;
+    ns1:HasCPU_min 1.675288e-02 ;
+    ns1:HasCPU_percentile_50.0 1.888139e-02 ;
+    ns1:HasCPU_percentile_90.0 1.903208e-02 ;
+    ns1:HasCPU_percentile_95.0 1.903208e-02 ;
+    ns1:HasCPU_variance 3.933636e-07 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 2.858335e+01 ;
+    ns1:HasMemory_deviation 9.695886e+00 ;
+    ns1:HasMemory_max 3.477272e+01 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 3.392891e+01 ;
+    ns1:HasMemory_percentile_90.0 3.477272e+01 ;
+    ns1:HasMemory_percentile_95.0 3.477272e+01 ;
+    ns1:HasMemory_variance 9.40102e+01 .
+
+ns1:currencyservice-77d6b75564-8kwwr.server a ns1:Container ;
+    ns1:HasCPU_average 1.882956e-02 ;
+    ns1:HasCPU_deviation 2.426117e-04 ;
+    ns1:HasCPU_max 1.960042e-02 ;
+    ns1:HasCPU_min 1.841534e-02 ;
+    ns1:HasCPU_percentile_50.0 1.883692e-02 ;
+    ns1:HasCPU_percentile_90.0 1.897016e-02 ;
+    ns1:HasCPU_percentile_95.0 1.897016e-02 ;
+    ns1:HasCPU_variance 5.886042e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/currencyservice:v0.9.0> ;
+    ns1:HasMemory_average 2.287648e+05 ;
+    ns1:HasMemory_deviation 9.204724e+04 ;
+    ns1:HasMemory_max 3.733979e+05 ;
+    ns1:HasMemory_min 2.930948e+04 ;
+    ns1:HasMemory_percentile_50.0 1.658789e+05 ;
+    ns1:HasMemory_percentile_90.0 3.367386e+05 ;
+    ns1:HasMemory_percentile_95.0 3.367386e+05 ;
+    ns1:HasMemory_variance 8.472695e+09 .
+
+ns1:emailservice-5d6f97fbc6 a ns1:ReplicaSet ;
+    ns1:Controls ns1:emailservice-5d6f97fbc6-5rrkr .
+
+ns1:emailservice-5d6f97fbc6-5rrkr.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 5.079929e-03 ;
+    ns1:HasCPU_deviation 1.02636e-04 ;
+    ns1:HasCPU_max 5.276572e-03 ;
+    ns1:HasCPU_min 5.011876e-03 ;
+    ns1:HasCPU_percentile_50.0 5.024322e-03 ;
+    ns1:HasCPU_percentile_90.0 5.271916e-03 ;
+    ns1:HasCPU_percentile_95.0 5.271916e-03 ;
+    ns1:HasCPU_variance 1.053414e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.17328e+05 ;
+    ns1:HasMemory_deviation 9.215489e+04 ;
+    ns1:HasMemory_max 2.016589e+05 ;
+    ns1:HasMemory_min 2.117361e+02 ;
+    ns1:HasMemory_percentile_50.0 1.60336e+05 ;
+    ns1:HasMemory_percentile_90.0 2.016589e+05 ;
+    ns1:HasMemory_percentile_95.0 2.016589e+05 ;
+    ns1:HasMemory_variance 8.492523e+09 .
+
+ns1:emailservice-5d6f97fbc6-5rrkr.server a ns1:Container ;
+    ns1:HasCPU_average 5.787029e-04 ;
+    ns1:HasCPU_deviation 2.017548e-05 ;
+    ns1:HasCPU_max 5.906737e-04 ;
+    ns1:HasCPU_min 4.938908e-04 ;
+    ns1:HasCPU_percentile_50.0 5.845018e-04 ;
+    ns1:HasCPU_percentile_90.0 5.906737e-04 ;
+    ns1:HasCPU_percentile_95.0 5.906737e-04 ;
+    ns1:HasCPU_variance 4.070502e-10 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/emailservice:v0.9.0> ;
+    ns1:HasMemory_average 0e+00 ;
+    ns1:HasMemory_deviation 0e+00 ;
+    ns1:HasMemory_max 0e+00 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 0e+00 ;
+    ns1:HasMemory_percentile_95.0 0e+00 ;
+    ns1:HasMemory_variance 0e+00 .
+
+ns1:frontend-5b47ffb486-5ftdb.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 2.97863e-02 ;
+    ns1:HasCPU_deviation 2.453193e-04 ;
+    ns1:HasCPU_max 3.000749e-02 ;
+    ns1:HasCPU_min 2.93622e-02 ;
+    ns1:HasCPU_percentile_50.0 2.990647e-02 ;
+    ns1:HasCPU_percentile_90.0 3.000749e-02 ;
+    ns1:HasCPU_percentile_95.0 3.000749e-02 ;
+    ns1:HasCPU_variance 6.018158e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 2.37561e+01 ;
+    ns1:HasMemory_deviation 8.555105e+00 ;
+    ns1:HasMemory_max 3.488184e+01 ;
+    ns1:HasMemory_min 1.377177e+01 ;
+    ns1:HasMemory_percentile_50.0 1.777407e+01 ;
+    ns1:HasMemory_percentile_90.0 3.488184e+01 ;
+    ns1:HasMemory_percentile_95.0 3.488184e+01 ;
+    ns1:HasMemory_variance 7.318982e+01 .
+
+ns1:frontend-5b47ffb486-5ftdb.server a ns1:Container ;
+    ns1:HasCPU_average 2.473811e-02 ;
+    ns1:HasCPU_deviation 8.962236e-04 ;
+    ns1:HasCPU_max 2.530991e-02 ;
+    ns1:HasCPU_min 2.191255e-02 ;
+    ns1:HasCPU_percentile_50.0 2.511003e-02 ;
+    ns1:HasCPU_percentile_90.0 2.527349e-02 ;
+    ns1:HasCPU_percentile_95.0 2.527349e-02 ;
+    ns1:HasCPU_variance 8.032168e-07 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/frontend:v0.9.0> ;
+    ns1:HasMemory_average 1.178492e+05 ;
+    ns1:HasMemory_deviation 3.875746e+04 ;
+    ns1:HasMemory_max 1.693674e+05 ;
+    ns1:HasMemory_min 7.142939e+04 ;
+    ns1:HasMemory_percentile_50.0 8.9899e+04 ;
+    ns1:HasMemory_percentile_90.0 1.693674e+05 ;
+    ns1:HasMemory_percentile_95.0 1.693674e+05 ;
+    ns1:HasMemory_variance 1.502141e+09 .
+
+ns1:frontend-5b47ffb486-j4r7r.istio-proxy a ns1:Container ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> .
+
+ns1:frontend-5b47ffb486-j4r7r.server a ns1:Container ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/frontend:v0.9.0> .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/adservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/adservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/cartservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/cartservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/checkoutservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/checkoutservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/currencyservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/currencyservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/emailservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/emailservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/paymentservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/paymentservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/productcatalogservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/productcatalogservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/recommendationservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/recommendationservice" ;
+    ns1:HasTag "v0.9.0" .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/shippingservice:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/shippingservice" ;
+    ns1:HasTag "v0.9.0" .
+
+ns1:node1.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be a ns1:Node ;
+    ns1:HasCPU_average 2.3946e+01 ;
+    ns1:HasCPU_deviation 4.532655e-03 ;
+    ns1:HasCPU_max 2.395092e+01 ;
+    ns1:HasCPU_min 2.393938e+01 ;
+    ns1:HasCPU_percentile_50.0 2.394621e+01 ;
+    ns1:HasCPU_percentile_90.0 2.395092e+01 ;
+    ns1:HasCPU_percentile_95.0 2.395092e+01 ;
+    ns1:HasCPU_variance 2.054496e-05 ;
+    ns1:HasMemory_average 1.570874e-01 ;
+    ns1:HasMemory_deviation 1.229014e-05 ;
+    ns1:HasMemory_max 1.57096e-01 ;
+    ns1:HasMemory_min 1.570366e-01 ;
+    ns1:HasMemory_percentile_50.0 1.570908e-01 ;
+    ns1:HasMemory_percentile_90.0 1.57096e-01 ;
+    ns1:HasMemory_percentile_95.0 1.57096e-01 ;
+    ns1:HasMemory_variance 1.510475e-10 ;
+    ns1:HasPod ns1:checkoutservice-6bf469c9db-znnwt,
+        ns1:currencyservice-77d6b75564-8kwwr,
+        ns1:emailservice-5d6f97fbc6-5rrkr,
+        ns1:frontend-5b47ffb486-5ftdb,
+        ns1:paymentservice-6cb6d8949d-rzsk6,
+        ns1:recommendationservice-cc747488-cml54 .
+
+ns1:node2.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be a ns1:Node ;
+    ns1:HasCPU_average 3.983599e+00 ;
+    ns1:HasCPU_deviation 7.246003e-04 ;
+    ns1:HasCPU_max 3.985167e+00 ;
+    ns1:HasCPU_min 3.982917e+00 ;
+    ns1:HasCPU_percentile_50.0 3.983458e+00 ;
+    ns1:HasCPU_percentile_90.0 3.985167e+00 ;
+    ns1:HasCPU_percentile_95.0 3.985167e+00 ;
+    ns1:HasCPU_variance 5.250457e-07 ;
+    ns1:HasMemory_average 9.923688e-02 ;
+    ns1:HasMemory_deviation 3.455573e-05 ;
+    ns1:HasMemory_max 9.93116e-02 ;
+    ns1:HasMemory_min 9.920929e-02 ;
+    ns1:HasMemory_percentile_50.0 9.921887e-02 ;
+    ns1:HasMemory_percentile_90.0 9.93116e-02 ;
+    ns1:HasMemory_percentile_95.0 9.93116e-02 ;
+    ns1:HasMemory_variance 1.194099e-09 .
+
+ns1:node3.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be a ns1:Node ;
+    ns1:HasCPU_average 2.398975e+01 ;
+    ns1:HasCPU_deviation 1.982932e-02 ;
+    ns1:HasCPU_max 2.401362e+01 ;
+    ns1:HasCPU_min 2.396083e+01 ;
+    ns1:HasCPU_percentile_50.0 2.399871e+01 ;
+    ns1:HasCPU_percentile_90.0 2.401362e+01 ;
+    ns1:HasCPU_percentile_95.0 2.401362e+01 ;
+    ns1:HasCPU_variance 3.93202e-04 ;
+    ns1:HasMemory_average 1.789915e-01 ;
+    ns1:HasMemory_deviation 2.205751e-04 ;
+    ns1:HasMemory_max 1.79269e-01 ;
+    ns1:HasMemory_min 1.786524e-01 ;
+    ns1:HasMemory_percentile_50.0 1.790589e-01 ;
+    ns1:HasMemory_percentile_90.0 1.79269e-01 ;
+    ns1:HasMemory_percentile_95.0 1.79269e-01 ;
+    ns1:HasMemory_variance 4.865339e-08 ;
+    ns1:HasPod ns1:adservice-6d47d8bb4d-55gzb,
+        ns1:cartservice-58f875656c-jwx5k,
+        ns1:frontend-5b47ffb486-j4r7r,
+        ns1:productcatalogservice-7dfcfcbd76-kw6tz,
+        ns1:redis-cart-6f968b74b7-p7lr2,
+        ns1:shippingservice-76b95c9c96-r8w4t .
+
+ns1:node4.deucalionx.ilabt-imec-be.wall2.ilabt.iminds.be a ns1:Node ;
+    ns1:HasCPU_average 2.398563e+01 ;
+    ns1:HasCPU_deviation 3.458917e-03 ;
+    ns1:HasCPU_max 2.399296e+01 ;
+    ns1:HasCPU_min 2.398221e+01 ;
+    ns1:HasCPU_percentile_50.0 2.398504e+01 ;
+    ns1:HasCPU_percentile_90.0 2.399008e+01 ;
+    ns1:HasCPU_percentile_95.0 2.399296e+01 ;
+    ns1:HasCPU_variance 1.19641e-05 ;
+    ns1:HasMemory_average 8.724803e-02 ;
+    ns1:HasMemory_deviation 2.43214e-05 ;
+    ns1:HasMemory_max 8.727328e-02 ;
+    ns1:HasMemory_min 8.720034e-02 ;
+    ns1:HasMemory_percentile_50.0 8.725067e-02 ;
+    ns1:HasMemory_percentile_90.0 8.727328e-02 ;
+    ns1:HasMemory_percentile_95.0 8.727328e-02 ;
+    ns1:HasMemory_variance 5.915307e-10 .
+
+ns1:paymentservice-6cb6d8949d a ns1:ReplicaSet ;
+    ns1:Controls ns1:paymentservice-6cb6d8949d-rzsk6 .
+
+ns1:paymentservice-6cb6d8949d-rzsk6.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 4.973274e-03 ;
+    ns1:HasCPU_deviation 2.752421e-04 ;
+    ns1:HasCPU_max 5.054637e-03 ;
+    ns1:HasCPU_min 3.743139e-03 ;
+    ns1:HasCPU_percentile_50.0 5.032408e-03 ;
+    ns1:HasCPU_percentile_90.0 5.046535e-03 ;
+    ns1:HasCPU_percentile_95.0 5.046535e-03 ;
+    ns1:HasCPU_variance 7.575822e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 0e+00 ;
+    ns1:HasMemory_deviation 0e+00 ;
+    ns1:HasMemory_max 0e+00 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 0e+00 ;
+    ns1:HasMemory_percentile_95.0 0e+00 ;
+    ns1:HasMemory_variance 0e+00 .
+
+ns1:paymentservice-6cb6d8949d-rzsk6.server a ns1:Container ;
+    ns1:HasCPU_average 3.42912e-05 ;
+    ns1:HasCPU_deviation 8.732233e-06 ;
+    ns1:HasCPU_max 4.252367e-05 ;
+    ns1:HasCPU_min 9.750823e-06 ;
+    ns1:HasCPU_percentile_50.0 4.067313e-05 ;
+    ns1:HasCPU_percentile_90.0 4.252367e-05 ;
+    ns1:HasCPU_percentile_95.0 4.252367e-05 ;
+    ns1:HasCPU_variance 7.62519e-11 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/paymentservice:v0.9.0> ;
+    ns1:HasMemory_average 3.716183e+03 ;
+    ns1:HasMemory_deviation 1.360875e+04 ;
+    ns1:HasMemory_max 6.457097e+04 ;
+    ns1:HasMemory_min 2.092914e+02 ;
+    ns1:HasMemory_percentile_50.0 7.316078e+02 ;
+    ns1:HasMemory_percentile_90.0 9.627195e+02 ;
+    ns1:HasMemory_percentile_95.0 9.627195e+02 ;
+    ns1:HasMemory_variance 1.851981e+08 .
+
+ns1:productcatalogservice-7dfcfcbd76 a ns1:ReplicaSet ;
+    ns1:Controls ns1:productcatalogservice-7dfcfcbd76-kw6tz .
+
+ns1:productcatalogservice-7dfcfcbd76-kw6tz.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 8.382874e-03 ;
+    ns1:HasCPU_deviation 3.496921e-04 ;
+    ns1:HasCPU_max 8.734288e-03 ;
+    ns1:HasCPU_min 7.277045e-03 ;
+    ns1:HasCPU_percentile_50.0 8.465069e-03 ;
+    ns1:HasCPU_percentile_90.0 8.655407e-03 ;
+    ns1:HasCPU_percentile_95.0 8.734288e-03 ;
+    ns1:HasCPU_variance 1.222845e-07 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.254143e+05 ;
+    ns1:HasMemory_deviation 9.922149e+04 ;
+    ns1:HasMemory_max 2.188611e+05 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.965362e+05 ;
+    ns1:HasMemory_percentile_90.0 2.188611e+05 ;
+    ns1:HasMemory_percentile_95.0 2.188611e+05 ;
+    ns1:HasMemory_variance 9.844904e+09 .
+
+ns1:productcatalogservice-7dfcfcbd76-kw6tz.server a ns1:Container ;
+    ns1:HasCPU_average 3.148539e-03 ;
+    ns1:HasCPU_deviation 1.127671e-04 ;
+    ns1:HasCPU_max 3.306363e-03 ;
+    ns1:HasCPU_min 2.737384e-03 ;
+    ns1:HasCPU_percentile_50.0 3.14718e-03 ;
+    ns1:HasCPU_percentile_90.0 3.234662e-03 ;
+    ns1:HasCPU_percentile_95.0 3.306363e-03 ;
+    ns1:HasCPU_variance 1.271643e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/productcatalogservice:v0.9.0> ;
+    ns1:HasMemory_average 1.332073e+05 ;
+    ns1:HasMemory_deviation 2.642247e+04 ;
+    ns1:HasMemory_max 1.701748e+05 ;
+    ns1:HasMemory_min 1.017654e+05 ;
+    ns1:HasMemory_percentile_50.0 1.156585e+05 ;
+    ns1:HasMemory_percentile_90.0 1.701748e+05 ;
+    ns1:HasMemory_percentile_95.0 1.701748e+05 ;
+    ns1:HasMemory_variance 6.981469e+08 .
+
+ns1:recommendationservice-cc747488 a ns1:ReplicaSet ;
+    ns1:Controls ns1:recommendationservice-cc747488-cml54 .
+
+ns1:recommendationservice-cc747488-cml54.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 5.277108e-03 ;
+    ns1:HasCPU_deviation 2.573591e-05 ;
+    ns1:HasCPU_max 5.317098e-03 ;
+    ns1:HasCPU_min 5.235947e-03 ;
+    ns1:HasCPU_percentile_50.0 5.271932e-03 ;
+    ns1:HasCPU_percentile_90.0 5.317098e-03 ;
+    ns1:HasCPU_percentile_95.0 5.317098e-03 ;
+    ns1:HasCPU_variance 6.623371e-10 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.945999e+01 ;
+    ns1:HasMemory_deviation 9.877406e+00 ;
+    ns1:HasMemory_max 4.212215e+01 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.667467e+01 ;
+    ns1:HasMemory_percentile_90.0 3.435737e+01 ;
+    ns1:HasMemory_percentile_95.0 3.435737e+01 ;
+    ns1:HasMemory_variance 9.756314e+01 .
+
+ns1:recommendationservice-cc747488-cml54.server a ns1:Container ;
+    ns1:HasCPU_average 1.755666e-03 ;
+    ns1:HasCPU_deviation 5.122153e-05 ;
+    ns1:HasCPU_max 1.815592e-03 ;
+    ns1:HasCPU_min 1.658555e-03 ;
+    ns1:HasCPU_percentile_50.0 1.746042e-03 ;
+    ns1:HasCPU_percentile_90.0 1.815592e-03 ;
+    ns1:HasCPU_percentile_95.0 1.815592e-03 ;
+    ns1:HasCPU_variance 2.623646e-09 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/recommendationservice:v0.9.0> ;
+    ns1:HasMemory_average 0e+00 ;
+    ns1:HasMemory_deviation 0e+00 ;
+    ns1:HasMemory_max 0e+00 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 0e+00 ;
+    ns1:HasMemory_percentile_95.0 0e+00 ;
+    ns1:HasMemory_variance 0e+00 .
+
+ns1:redis-cart-6f968b74b7 a ns1:ReplicaSet ;
+    ns1:Controls ns1:redis-cart-6f968b74b7-p7lr2 .
+
+ns1:redis-cart-6f968b74b7-p7lr2.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 5.272657e-03 ;
+    ns1:HasCPU_deviation 1.520427e-04 ;
+    ns1:HasCPU_max 5.444023e-03 ;
+    ns1:HasCPU_min 4.682089e-03 ;
+    ns1:HasCPU_percentile_50.0 5.299383e-03 ;
+    ns1:HasCPU_percentile_90.0 5.444023e-03 ;
+    ns1:HasCPU_percentile_95.0 5.444023e-03 ;
+    ns1:HasCPU_variance 2.311698e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 6.708655e+04 ;
+    ns1:HasMemory_deviation 9.499785e+04 ;
+    ns1:HasMemory_max 2.095115e+05 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 0e+00 ;
+    ns1:HasMemory_percentile_90.0 2.018341e+05 ;
+    ns1:HasMemory_percentile_95.0 2.095115e+05 ;
+    ns1:HasMemory_variance 9.024591e+09 .
+
+ns1:redis-cart-6f968b74b7-p7lr2.redis a ns1:Container ;
+    ns1:HasCPU_average 1.440873e-03 ;
+    ns1:HasCPU_deviation 5.210272e-05 ;
+    ns1:HasCPU_max 1.492063e-03 ;
+    ns1:HasCPU_min 1.35335e-03 ;
+    ns1:HasCPU_percentile_50.0 1.465097e-03 ;
+    ns1:HasCPU_percentile_90.0 1.476225e-03 ;
+    ns1:HasCPU_percentile_95.0 1.492063e-03 ;
+    ns1:HasCPU_variance 2.714694e-09 ;
+    ns1:HasImage <https://github.com/predict/deucalion#redis:alpine@sha256:090276da2603db19b154602c374f505d94c10ea57e9749fc3e68e955284bf0fd> ;
+    ns1:HasMemory_average 1.443119e+01 ;
+    ns1:HasMemory_deviation 1.484926e+01 ;
+    ns1:HasMemory_max 3.459313e+01 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.76345e+01 ;
+    ns1:HasMemory_percentile_90.0 3.459313e+01 ;
+    ns1:HasMemory_percentile_95.0 3.459313e+01 ;
+    ns1:HasMemory_variance 2.205004e+02 .
+
+<https://github.com/predict/deucalion#redis:alpine@sha256:090276da2603db19b154602c374f505d94c10ea57e9749fc3e68e955284bf0fd> a ns1:Image ;
+    ns1:HasName "redis" ;
+    ns1:HasTag "alpine@sha256" .
+
+ns1:shippingservice-76b95c9c96 a ns1:ReplicaSet ;
+    ns1:Controls ns1:shippingservice-76b95c9c96-r8w4t .
+
+ns1:shippingservice-76b95c9c96-r8w4t.istio-proxy a ns1:Container ;
+    ns1:HasCPU_average 4.986988e-03 ;
+    ns1:HasCPU_deviation 1.839785e-04 ;
+    ns1:HasCPU_max 5.085038e-03 ;
+    ns1:HasCPU_min 4.246515e-03 ;
+    ns1:HasCPU_percentile_50.0 5.063974e-03 ;
+    ns1:HasCPU_percentile_90.0 5.085038e-03 ;
+    ns1:HasCPU_percentile_95.0 5.085038e-03 ;
+    ns1:HasCPU_variance 3.384808e-08 ;
+    ns1:HasImage <https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> ;
+    ns1:HasMemory_average 1.923892e+04 ;
+    ns1:HasMemory_deviation 5.56338e+04 ;
+    ns1:HasMemory_max 1.907076e+05 ;
+    ns1:HasMemory_min 1.777978e+01 ;
+    ns1:HasMemory_percentile_50.0 1.259172e+03 ;
+    ns1:HasMemory_percentile_90.0 1.635755e+03 ;
+    ns1:HasMemory_percentile_95.0 1.907076e+05 ;
+    ns1:HasMemory_variance 3.095119e+09 .
+
+ns1:shippingservice-76b95c9c96-r8w4t.server a ns1:Container ;
+    ns1:HasCPU_average 1.776108e-04 ;
+    ns1:HasCPU_deviation 1.474456e-05 ;
+    ns1:HasCPU_max 1.998151e-04 ;
+    ns1:HasCPU_min 1.440877e-04 ;
+    ns1:HasCPU_percentile_50.0 1.768663e-04 ;
+    ns1:HasCPU_percentile_90.0 1.998151e-04 ;
+    ns1:HasCPU_percentile_95.0 1.998151e-04 ;
+    ns1:HasCPU_variance 2.174019e-10 ;
+    ns1:HasImage <https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/shippingservice:v0.9.0> ;
+    ns1:HasMemory_average 9.022816e+01 ;
+    ns1:HasMemory_deviation 4.807108e+01 ;
+    ns1:HasMemory_max 1.528969e+02 ;
+    ns1:HasMemory_min 0e+00 ;
+    ns1:HasMemory_percentile_50.0 1.122751e+02 ;
+    ns1:HasMemory_percentile_90.0 1.270404e+02 ;
+    ns1:HasMemory_percentile_95.0 1.270404e+02 ;
+    ns1:HasMemory_variance 2.310829e+03 .
+
+ns1:adservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:adservice-6d47d8bb4d-55gzb .
+
+ns1:checkoutservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:checkoutservice-6bf469c9db-znnwt .
+
+ns1:emailservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:emailservice-5d6f97fbc6-5rrkr .
+
+ns1:frontend-5b47ffb486 a ns1:ReplicaSet ;
+    ns1:Controls ns1:frontend-5b47ffb486-5ftdb,
+        ns1:frontend-5b47ffb486-j4r7r .
+
+ns1:frontend.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:frontend-5b47ffb486-5ftdb,
+        ns1:frontend-5b47ffb486-j4r7r .
+
+<https://github.com/predict/deucalion#gcr.io/google-samples/microservices-demo/frontend:v0.9.0> a ns1:Image ;
+    ns1:HasName "gcr.io/google-samples/microservices-demo/frontend" ;
+    ns1:HasTag "v0.9.0" .
+
+ns1:paymentservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:paymentservice-6cb6d8949d-rzsk6 .
+
+ns1:recommendationservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:recommendationservice-cc747488-cml54 .
+
+ns1:redis-cart-6f968b74b7-p7lr2 a ns1:Pod ;
+    ns1:HasContainer ns1:redis-cart-6f968b74b7-p7lr2.istio-proxy,
+        ns1:redis-cart-6f968b74b7-p7lr2.redis ;
+    ns1:IsControlledBy ns1:redis-cart-6f968b74b7 .
+
+ns1:adservice-6d47d8bb4d-55gzb a ns1:Pod ;
+    ns1:HasContainer ns1:adservice-6d47d8bb4d-55gzb.istio-proxy,
+        ns1:adservice-6d47d8bb4d-55gzb.server ;
+    ns1:IsControlledBy ns1:adservice-6d47d8bb4d ;
+    ns1:IsServedBy ns1:adservice.onlineboutique.svc.cluster.local .
+
+ns1:cartservice-58f875656c-jwx5k a ns1:Pod ;
+    ns1:HasContainer ns1:cartservice-58f875656c-jwx5k.istio-proxy,
+        ns1:cartservice-58f875656c-jwx5k.server ;
+    ns1:IsControlledBy ns1:cartservice-58f875656c ;
+    ns1:IsServedBy ns1:cartservice.onlineboutique.svc.cluster.local .
+
+ns1:cartservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:cartservice-58f875656c-jwx5k .
+
+ns1:currencyservice-77d6b75564-8kwwr a ns1:Pod ;
+    ns1:HasContainer ns1:currencyservice-77d6b75564-8kwwr.istio-proxy,
+        ns1:currencyservice-77d6b75564-8kwwr.server ;
+    ns1:IsControlledBy ns1:currencyservice-77d6b75564 ;
+    ns1:IsServedBy ns1:currencyservice.onlineboutique.svc.cluster.local .
+
+ns1:currencyservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:currencyservice-77d6b75564-8kwwr .
+
+ns1:emailservice-5d6f97fbc6-5rrkr a ns1:Pod ;
+    ns1:HasContainer ns1:emailservice-5d6f97fbc6-5rrkr.istio-proxy,
+        ns1:emailservice-5d6f97fbc6-5rrkr.server ;
+    ns1:IsControlledBy ns1:emailservice-5d6f97fbc6 ;
+    ns1:IsServedBy ns1:emailservice.onlineboutique.svc.cluster.local .
+
+ns1:frontend-5b47ffb486-j4r7r a ns1:Pod ;
+    ns1:HasContainer ns1:frontend-5b47ffb486-j4r7r.istio-proxy,
+        ns1:frontend-5b47ffb486-j4r7r.server ;
+    ns1:IsControlledBy ns1:frontend-5b47ffb486 ;
+    ns1:IsServedBy ns1:frontend.onlineboutique.svc.cluster.local .
+
+ns1:paymentservice-6cb6d8949d-rzsk6 a ns1:Pod ;
+    ns1:HasContainer ns1:paymentservice-6cb6d8949d-rzsk6.istio-proxy,
+        ns1:paymentservice-6cb6d8949d-rzsk6.server ;
+    ns1:IsControlledBy ns1:paymentservice-6cb6d8949d ;
+    ns1:IsServedBy ns1:paymentservice.onlineboutique.svc.cluster.local .
+
+ns1:productcatalogservice-7dfcfcbd76-kw6tz a ns1:Pod ;
+    ns1:HasContainer ns1:productcatalogservice-7dfcfcbd76-kw6tz.istio-proxy,
+        ns1:productcatalogservice-7dfcfcbd76-kw6tz.server ;
+    ns1:IsControlledBy ns1:productcatalogservice-7dfcfcbd76 ;
+    ns1:IsServedBy ns1:productcatalogservice.onlineboutique.svc.cluster.local .
+
+ns1:shippingservice-76b95c9c96-r8w4t a ns1:Pod ;
+    ns1:HasContainer ns1:shippingservice-76b95c9c96-r8w4t.istio-proxy,
+        ns1:shippingservice-76b95c9c96-r8w4t.server ;
+    ns1:IsControlledBy ns1:shippingservice-76b95c9c96 ;
+    ns1:IsServedBy ns1:shippingservice.onlineboutique.svc.cluster.local .
+
+ns1:shippingservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:shippingservice-76b95c9c96-r8w4t .
+
+ns1:productcatalogservice.onlineboutique.svc.cluster.local a ns1:Service ;
+    ns1:Serves ns1:productcatalogservice-7dfcfcbd76-kw6tz .
+
+ns1:recommendationservice-cc747488-cml54 a ns1:Pod ;
+    ns1:HasConnection <https://github.com/predict/deucalion#Connection?source=recommendationservice-cc747488-cml54&destination=productcatalogservice.onlineboutique.svc.cluster.local> ;
+    ns1:HasContainer ns1:recommendationservice-cc747488-cml54.istio-proxy,
+        ns1:recommendationservice-cc747488-cml54.server ;
+    ns1:IsControlledBy ns1:recommendationservice-cc747488 ;
+    ns1:IsServedBy ns1:recommendationservice.onlineboutique.svc.cluster.local .
+
+ns1:checkoutservice-6bf469c9db-znnwt a ns1:Pod ;
+    ns1:HasConnection <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=cartservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=currencyservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=emailservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=paymentservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=productcatalogservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=checkoutservice-6bf469c9db-znnwt&destination=shippingservice.onlineboutique.svc.cluster.local> ;
+    ns1:HasContainer ns1:checkoutservice-6bf469c9db-znnwt.istio-proxy,
+        ns1:checkoutservice-6bf469c9db-znnwt.server ;
+    ns1:IsControlledBy ns1:checkoutservice-6bf469c9db ;
+    ns1:IsServedBy ns1:checkoutservice.onlineboutique.svc.cluster.local .
+
+ns1:frontend-5b47ffb486-5ftdb a ns1:Pod ;
+    ns1:HasConnection <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=169.254.169.254>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=adservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=cartservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=checkoutservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=currencyservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=productcatalogservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=recommendationservice.onlineboutique.svc.cluster.local>,
+        <https://github.com/predict/deucalion#Connection?source=frontend-5b47ffb486-5ftdb&destination=shippingservice.onlineboutique.svc.cluster.local> ;
+    ns1:HasContainer ns1:frontend-5b47ffb486-5ftdb.istio-proxy,
+        ns1:frontend-5b47ffb486-5ftdb.server ;
+    ns1:IsControlledBy ns1:frontend-5b47ffb486 ;
+    ns1:IsServedBy ns1:frontend.onlineboutique.svc.cluster.local .
+
+<https://github.com/predict/deucalion#docker.io/istio/proxyv2:1.19.3> a ns1:Image ;
+    ns1:HasName "docker.io/istio/proxyv2" ;
+    ns1:HasTag "1.19.3" .
+
